@@ -47,11 +47,11 @@ function Parent(attributes) {
     this.newLocation = attributes.location;
     this.newPhrase = attributes.phrase;
     this.speak = function() {
-    return '${this.newName} says ${this.newPhrase}';
+    return `${this.newName} says ${this.newPhrase}`;
     }
 }
 
-Const fred = newParent ({
+const fred = new Parent ({
 age: 35,
 name: "Fred",
 location: "Bedrock",
@@ -67,7 +67,7 @@ console.log(fred.speak());
 // code example for Explicit Binding
 
 function greet (lang1, lang2, lang3) {
-    alert(
+    console.log (
       `Hello, my name is ${this.name} and I know ${lang1}, ${lang2}, and ${lang3}`
     )
   }
